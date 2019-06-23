@@ -92,6 +92,7 @@ extension ItemViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: itemCellReuseIdentifier, for: indexPath) as! ItemTableViewCell
+        cell.selectionStyle = .none
         if ItemCollection.sharedInstance.row!.count > 0 {
             let item = ItemCollection.sharedInstance.row?[(indexPath as NSIndexPath).row] as! [String:AnyObject]
             cell.itemNameLabel.text = item["title"] as? String
