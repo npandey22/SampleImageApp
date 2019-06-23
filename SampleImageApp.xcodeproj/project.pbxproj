@@ -11,9 +11,10 @@
 		3D4982DB22BDEE82001F7585 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982DA22BDEE82001F7585 /* ItemViewController.swift */; };
 		3D4982E022BDEE83001F7585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4982DF22BDEE83001F7585 /* Assets.xcassets */; };
 		3D4982F122BDF148001F7585 /* ItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982F022BDF148001F7585 /* ItemCollection.swift */; };
-		3D4982F322BDF15D001F7585 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982F222BDF15D001F7585 /* ItemCell.swift */; };
+		3D4982F322BDF15D001F7585 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982F222BDF15D001F7585 /* ItemTableViewCell.swift */; };
 		3D4982F522BDF170001F7585 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982F422BDF170001F7585 /* ItemViewModel.swift */; };
 		3D4982F722BDF189001F7585 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982F622BDF189001F7585 /* NetworkConnectivity.swift */; };
+		3D4982FD22BF8769001F7585 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4982FC22BF8769001F7585 /* URLSessionExtension.swift */; };
 		AC7FCD3C56B2CD90F5A22301 /* Pods_SampleImageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C105BF227E1B8D0183C978 /* Pods_SampleImageApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +26,10 @@
 		3D4982DF22BDEE83001F7585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D4982E422BDEE83001F7585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4982F022BDF148001F7585 /* ItemCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollection.swift; sourceTree = "<group>"; };
-		3D4982F222BDF15D001F7585 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		3D4982F222BDF15D001F7585 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		3D4982F422BDF170001F7585 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		3D4982F622BDF189001F7585 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		3D4982FC22BF8769001F7585 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		C41D567662C6522E2823BCC2 /* Pods-SampleImageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleImageApp.release.xcconfig"; path = "Target Support Files/Pods-SampleImageApp/Pods-SampleImageApp.release.xcconfig"; sourceTree = "<group>"; };
 		DADFB1FA105EAB9C3B54018C /* Pods-SampleImageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleImageApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleImageApp/Pods-SampleImageApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				3D4982D822BDEE82001F7585 /* AppDelegate.swift */,
 				3D4982DF22BDEE83001F7585 /* Assets.xcassets */,
 				3D4982E422BDEE83001F7585 /* Info.plist */,
+				3D4982FC22BF8769001F7585 /* URLSessionExtension.swift */,
 			);
 			path = SampleImageApp;
 			sourceTree = "<group>";
@@ -88,7 +91,7 @@
 		3D4982EC22BDF11A001F7585 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3D4982F222BDF15D001F7585 /* ItemCell.swift */,
+				3D4982F222BDF15D001F7585 /* ItemTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4982F322BDF15D001F7585 /* ItemCell.swift in Sources */,
+				3D4982F322BDF15D001F7585 /* ItemTableViewCell.swift in Sources */,
+				3D4982FD22BF8769001F7585 /* URLSessionExtension.swift in Sources */,
 				3D4982F722BDF189001F7585 /* NetworkConnectivity.swift in Sources */,
 				3D4982F122BDF148001F7585 /* ItemCollection.swift in Sources */,
 				3D4982DB22BDEE82001F7585 /* ItemViewController.swift in Sources */,
