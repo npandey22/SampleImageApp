@@ -26,6 +26,7 @@ class NetworkConnectivity {
     
     // MARK: - API Request Call
     func requestFetchResources(completion: @escaping (Result<AnyObject, APIServiceError>) -> Void) {
+        
         guard var _ = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {
             // MARK: - Callback for Failure
             completion(.failure(.invalidEndpoint))
@@ -41,7 +42,7 @@ class NetworkConnectivity {
                 }
                 
                 do {
-                    // MARK: - Response Data Parsing
+                    // MARK: - Parsing Response Data
                     if let utf8Data = String(decoding: data, as: UTF8.self).data(using: .utf8) {
                         let jsonResponse = try JSONSerialization.jsonObject(with:
                             utf8Data, options: [])

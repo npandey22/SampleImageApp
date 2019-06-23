@@ -20,20 +20,20 @@ class ItemTableViewCell: UITableViewCell {
     
     //MARK: - Item Name Configuration
     let itemNameLabel : UILabel = {
-        let lbl = UILabel()
-        lbl.textColor = .black
-        lbl.numberOfLines = 0
-        lbl.font = UIFont(name: "AvenirNext-DemiBold", size: 16)
-        return lbl
+        let label = UILabel()
+        label.textColor = .black
+        label.numberOfLines = 0
+        label.font = UIFont(name: "AvenirNext-DemiBold", size: 16)
+        return label
     }()
     
     //MARK: - Item Description Configuration
     let itemDescriptionLabel : UILabel = {
-        let lbl = UILabel()
-        lbl.numberOfLines = 0
-        lbl.font = UIFont(name: "Avenir-Book", size: 16)
-        lbl.textColor = UIColor.darkGray
-        return lbl
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Avenir-Book", size: 16)
+        label.textColor = UIColor.darkGray
+        return label
     }()
     
     

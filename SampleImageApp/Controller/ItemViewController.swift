@@ -28,13 +28,13 @@ class ItemViewController: UIViewController {
     
     //MARK: - Navigation Bar Setup
     func setUpNavigationItem() {
-        let lbl = UILabel()
-        lbl.textColor = .black
-        lbl.text = ItemCollection.sharedInstance.headerTitle
-        lbl.font = UIFont(name: "AvenirNext-DemiBold", size: 20)
-        lbl.textAlignment = .center
-        lbl.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        navigationItem.titleView = lbl
+        let titleLabel = UILabel()
+        titleLabel.textColor = .black
+        titleLabel.text = ItemCollection.sharedInstance.headerTitle
+        titleLabel.font = UIFont(name: "AvenirNext-DemiBold", size: 20)
+        titleLabel.textAlignment = .center
+        titleLabel.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        navigationItem.titleView = titleLabel
     }
     
     //MARK: - API Call to get Data
