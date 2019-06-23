@@ -67,6 +67,7 @@
 		3D4982D722BDEE82001F7585 /* SampleImageApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D4982FE22BF884F001F7585 /* Extension */,
 				3D4982EF22BDF12D001F7585 /* APIService */,
 				3D4982EE22BDF127001F7585 /* Controller */,
 				3D4982ED22BDF120001F7585 /* ViewModel */,
@@ -75,7 +76,6 @@
 				3D4982D822BDEE82001F7585 /* AppDelegate.swift */,
 				3D4982DF22BDEE83001F7585 /* Assets.xcassets */,
 				3D4982E422BDEE83001F7585 /* Info.plist */,
-				3D4982FC22BF8769001F7585 /* URLSessionExtension.swift */,
 			);
 			path = SampleImageApp;
 			sourceTree = "<group>";
@@ -118,6 +118,14 @@
 				3D4982F622BDF189001F7585 /* NetworkConnectivity.swift */,
 			);
 			path = APIService;
+			sourceTree = "<group>";
+		};
+		3D4982FE22BF884F001F7585 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D4982FC22BF8769001F7585 /* URLSessionExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		59CD4E581B83F576AD6C83A2 /* Frameworks */ = {
